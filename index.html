@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VectorLabs</title>
+  <meta name="description" content="VectorLabs, the app studio behind Airpost.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VectorLabs">
+  <meta property="og:title" content="VectorLabs">
+  <meta property="og:description" content="An app studio. The maker of Airpost.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/epilogue.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=13">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="bar">
+    <div class="container bar__inner">
+      <a class="wordmark" href="#top" aria-label="VectorLabs home" data-i18n-aria="nav.home">
+        <img src="assets/logo.svg" alt="" width="146" height="21">
+      </a>
+      <nav class="bar__nav" aria-label="Main" data-i18n-aria="nav.label">
+        <a href="#apps" data-i18n="nav.apps">Apps</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" lang="en" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" lang="ko" data-lang="ko" aria-pressed="false">한국어</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1 id="hero-title">VectorLabs</h1>
+          <p class="lead" data-i18n="hero.lead">An app studio</p>
+          <div class="actions">
+            <a class="btn" href="mailto:forwoobusiness@gmail.com" data-i18n="hero.mail">Email us</a>
+            <a class="btn btn--quiet" href="#apps" data-i18n="hero.app">See apps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apps" id="apps" aria-labelledby="apps-title">
+      <div class="container">
+        <h2 id="apps-title" class="apps__title" data-i18n="apps.title">Apps</h2>
+        <article class="app-entry" id="airpost" aria-labelledby="airpost-name">
+          <div class="app-entry__head">
+            <img class="app-entry__icon" src="assets/airpost/app-icon.png" alt="" width="64" height="64" loading="lazy">
+            <div class="app-entry__name">
+              <h3 id="airpost-name">Airpost</h3>
+              <p data-i18n="app.lead">Air mail for pen pals around the world.</p>
+            </div>
+            <div class="app__get">
+              <a class="store" href="https://apps.apple.com/app/id6804885617">
+                <img src="assets/airpost/app-store-en.svg" data-i18n-src="img.badge" alt="Download on the App Store" data-i18n-alt="img.badge.alt" width="144" height="48" loading="lazy">
+              </a>
+              <ul class="links" aria-label="Airpost links" data-i18n-aria="app.links">
+                <li><a href="https://airpost.page/" data-i18n="link.site">Website</a></li>
+                <li><a href="https://seungwoo313.github.io/airpost-legal/privacy-en/" data-i18n="link.privacy" data-i18n-href="href.privacy">Privacy Policy</a></li>
+                <li><a href="https://seungwoo313.github.io/airpost-legal/terms-en/" data-i18n="link.terms" data-i18n-href="href.terms">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="screens" role="list" tabindex="0" aria-label="Airpost screens" data-i18n-aria="app.screens">
+            <li>
+              <div class="screen" data-slot="screen-tracking" data-kind="product" data-alt="Airpost flight tracking">
+                <img src="assets/airpost/tracking.webp" alt="A letter in flight over Incheon, 7 hours 13 minutes and 5,240 km to go" data-i18n-alt="img.tracking.alt" width="588" height="1280" loading="lazy">
+              </div>
+            </li>
+            <li>
+              <div class="screen" data-slot="screen-thread" data-kind="product" data-alt="An Airpost conversation">
+                <img src="assets/airpost/thread-en.webp" data-i18n-src="img.thread" alt="An Airpost conversation: a handwritten letter, a sealed airmail envelope and a letter in flight from Sydney to Incheon" data-i18n-alt="img.thread.alt" width="640" height="1391" loading="lazy">
+              </div>
+            </li>
+            <li>
+              <div class="screen" data-slot="screen-aircraft" data-kind="product" data-alt="Choosing a plane in Airpost">
+                <img src="assets/airpost/aircraft-en.webp" data-i18n-src="img.aircraft" alt="Choosing the plane that carries a letter, with four aircraft and their speeds" data-i18n-alt="img.aircraft.alt" width="640" height="1391" loading="lazy">
+              </div>
+            </li>
+            <li>
+              <div class="screen" data-slot="screen-enclosures" data-kind="product" data-alt="A drawing and a voice note in Airpost">
+                <img src="assets/airpost/enclosures-en.webp" data-i18n-src="img.enclosures" alt="A letter with a drawing of a flower and a cassette for a voice note" data-i18n-alt="img.enclosures.alt" width="640" height="1391" loading="lazy">
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__head">
+          <h2 id="contact-title" data-i18n="contact.title">Write to VectorLabs</h2>
+          <p class="lead" data-i18n="contact.lead">App support, partnerships and business proposals.</p>
+        </div>
+        <div class="contact__body">
+          <div class="contact__mail">
+            <a class="email" href="mailto:forwoobusiness@gmail.com">forwoobusiness@gmail.com</a>
+          </div>
+          <div class="contact__row">
+            <button class="btn btn--quiet" type="button" data-copy="forwoobusiness@gmail.com" data-i18n="contact.copy">Copy address</button>
+            <p class="status" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <img class="footer__mark" src="assets/logo.svg" alt="VectorLabs" width="292" height="42" loading="lazy">
+      <ul class="footer__links" aria-label="Apps" data-i18n-aria="apps.title">
+        <li><a href="https://airpost.page/">Airpost</a></li>
+      </ul>
+      <dl class="footer__info" aria-label="Business information" data-i18n-aria="foot.info">
+        <div><dt data-i18n="biz.name.k">Trade name</dt><dd data-i18n="biz.name.v">VectorLabs (벡터랩스)</dd></div>
+        <div><dt data-i18n="biz.owner.k">Proprietor</dt><dd data-i18n="biz.owner.v">Seungwoo Yang</dd></div>
+        <div><dt data-i18n="biz.reg.k">Business registration number</dt><dd class="num">251-43-01545</dd></div>
+        <div><dt data-i18n="biz.addr.k">Address</dt><dd data-i18n="biz.addr.v">Room 306, 10-7 Myeongnyun 3-gil, Deokjin-gu, Jeonju-si, Jeonbuk State, Republic of Korea</dd></div>
+        <div><dt data-i18n="biz.mail.k">Email</dt><dd><a href="mailto:forwoobusiness@gmail.com">forwoobusiness@gmail.com</a></dd></div>
+      </dl>
+      <p class="footer__legal">© 2026 VectorLabs</p>
+    </div>
+  </footer>
+
+  <script src="main.js?v=13" defer></script>
+  <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
